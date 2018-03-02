@@ -1,0 +1,349 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.fa p {    padding-left: 21%;
+    padding-top: 3%;}
+
+nav li a:hover{border-bottom: 2px solid #dababa;}
+
+
+
+.triple {
+    overflow: hidden;
+}
+
+.triple img {
+    float: left;
+    display: inline;
+    width: 33.3333333333%;
+}
+
+body {font-family: Poppins;}
+
+
+@media screen and (min-width: 480px) {
+.navmar
+{
+  margin-left :0%;
+
+}
+}
+
+.imgedit{max-height: auto;
+padding-left: 25%;
+overflow:auto;
+}
+
+
+
+
+logo{margin-top: -34px;}
+
+.textbelowunilag {padding:30px;
+ text-align: center;
+ background-color: #70cde3}
+
+
+@media (max-width: 1274px) {
+.disappear {
+visibility:hidden;
+}
+}
+
+
+
+
+@media screen and (min-width: 480px) {
+
+.disappear {
+
+      position: absolute;
+    left: -4%;
+    width: 200px;
+    top: 630px;
+     color: #de302f;
+    font-family: 'Poppins-SemiBold', sans-serif;
+    transform: rotate(270deg);
+        font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 3px;
+
+    }
+
+.textbelow {height:auto; 
+padding:30px;
+ text-align: center;
+ background-color: #70cde3}
+
+}
+
+ .btnedit{ font-size: 17px;
+border-radius: 0px;
+ 
+ }
+
+ .col-md-3 h2 {    font-size: 1.5em;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #de302f;
+    margin-top: 16px;}
+
+    .col-md-3 h3 { color: #333;
+    font-size: 1.1em;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-weight: 300;
+    margin-top: 3px;
+    }
+
+    .lead{  font-size: 3em;
+    color: #de302f;
+    font-weight: 300;
+    line-height: 1.2em;
+    margin-bottom: 24px;
+    text-transform: none;
+    letter-spacing: -0.1rem;
+    -webkit-font-smoothing: antialiased;
+        text-align: center;
+
+    }
+
+    .rotate {
+      
+      position: absolute;
+    left: -4%;
+    width: 200px;
+    top: 630px;
+    color: #de302f;
+    font-family: 'Poppins-SemiBold', sans-serif;
+    transform: rotate(270deg);
+        font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 3px;
+
+    }
+
+ .imgcl {} 
+
+  .imgclf {} 
+
+ .imgclf span img {    height: 52px;
+    width: 60px;
+    float: left;
+    margin: 1px;
+    }
+
+
+
+ .imgcl span img {    height: 52px;
+    width: 60px;
+    float: left;
+    margin: 3px;
+    }
+
+ .btnedit:hover{ border-style: solid;
+  border-width: 2px;}
+
+
+.aboutus {
+   
+    margin-left: 13%;
+    height:10px;
+}
+
+
+.addressnav {   color:#767676;
+                margin-left: 10px;
+                padding: 10px;
+                padding-left: 40px;
+
+                }
+
+.mainnav { padding: 20px;
+
+         }
+
+          #footer1 { 
+                         background-image: url("http://demo.k2theme.com/ruby/wp-content/uploads/2015/01/bg-footer.jpg");
+                         background-color: white;
+                         padding: 40px;
+                         padding-left: 60px;
+                 }  
+
+#topbar {
+    background: black;
+    color: #a89a9a;
+    padding:0px;
+}
+
+ #body1 {
+                                background-image: url(../img/wallpaper.jpg);
+                                background-repeat: repeat-y;
+                            } 
+
+
+.tagborder span {border-style: solid;
+                  margin: 3px;
+                  color: #767676;
+                  padding: 0px;
+                  text-align: center;
+                  display: block;
+                  width: 70px;
+                  float: left;
+                  border-width: thin;
+}
+
+.aboutbox {background-color:#dadada; 
+padding-top: 51px;
+height: auto;
+}
+
+hr {  border-top: 2px solid blue;}
+
+.otheroutreach {background-color:#e4e1e1;;
+    margin-top: 15px;
+    margin-bottom: 10px;}
+
+.span1{
+  background-image: url(img/csm_Topics_Young-Leaders-Forum_55121516bd.jpg) no-repeat;
+}
+
+.footercolor {color: #767676;}
+
+.footercolor h4{color: white;}
+
+.fa {
+  padding: 6px;
+  font-size: 15px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  height:29px; 
+ 
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-map-marker {
+  background: #3B5998;
+  color: white;}
+
+  .fa-phone {
+  background: #3B5998;
+  color: white;}
+
+   .fa-envelope {
+  background: #3B5998;
+  color: white;}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}

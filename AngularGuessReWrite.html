@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" >
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+</head>
+<body ng-app="MyGuess">
+        <script src="angular-1.6.6/angular.min.js"></script>
+
+        <div  id="main" class="jumbotron" ng-controller="correct">
+
+
+            <h2>Guess Game</h2>
+           <h3 class="well"> Guess The Computer Generated Number between 1 to 1000</h3><br />
+
+
+            <div class="guessG">
+    
+                    <!-- <button ng-click="initialize()">Initialize</button> -->
+                    <b>Enter Any Number:</b> <input type="number" ng-model="guess" > <button class=" btn-success "ng-click="Verify()"> Verify</button>
+                    <button class="btn-warning " ng-click="restart()"> Restart</button><br /> <br />
+
+                    <p id="numberOfTries">Number of Guess <span class="badge">{{tries}}</span></p><br>
+
+                    <!-- <p>Your guess is {{guess}}</p> -->
+                    
+                    <!--ioedeveloper-->
+                    <p class="{{class}}">{{lastmsg}}</p>
+
+                    <!--<p class="correct" ng-show="check===0">Correct result!!!</p>
+                    <p class="higher" ng-show="check<0">Your Guess Is Higher Than The Correct Number!!!</p>
+                    <p  class="higher" ng-show="check>0">Your Guess Is Lower Than The Correct Number!!!</p>
+                    <div ng-show="(check>0||check<0)&&(NoOfTries===5)">
+                        <p class="wrong">You are wrong, The correct Number is:{{random}}</p>
+                    </div>-->
+
+                    <!-- <p>{{random}}</p> -->
+            </div>
+        </div>
+            
+
+        <script>
+            var app = angular.module('MyGuess',[]);
+            app.controller('correct', function($scope){
+               
+                //$scope.initialize()
+               // $scope.random = Math.floor((Math.random() * 1000) + 1) ;
+
+
+                $scope.initialize =function(){
+                    $scope.random = Math.floor((Math.random() * 10) + 1) ;
+                    $scope.guess = null;
+                    $scope.check = null;
+                    $scope.NoOfTries = 0;
+                    $scope.newvalue = null;
+                    $scope.msg = null;
+                };
+
+                //Function to restart the game
+                $scope.restart = function () {
+                    $scope.initialize();
+                    $scope.lastmsg = null;
+                    $scope.tries = 0;
+                };
+
+                //ioedeveloper
+                $scope.Verify = function () {
+                    $scope.NoOfTries++;
+                    $scope.tries = $scope.NoOfTries;
+                    if ($scope.guess < $scope.random) {
+                        $scope.msg = "Your Guess Is Lower Than The Correct Number!!!";
+                        $scope.lastmsg = $scope.msg;
+                        $scope.class = "higher";
+                    }
+                    else if ($scope.guess > $scope.random) {
+                        $scope.msg = "Your Guess Is Higher Than The Correct Number!!!";
+                        $scope.lastmsg = $scope.msg;
+                        $scope.class = "higher";
+                    }
+                    else {
+                        $scope.msg = "You are correct!";
+                        $scope.lastmsg = $scope.msg;
+                        $scope.class = "correct";
+                        $scope.initialize();
+                    }
+
+                    if ($scope.NoOfTries == 5) {
+                        $scope.msg = "You are wrong! The correct answer is :" + $scope.random;
+                        $scope.lastmsg = $scope.msg;
+                        $scope.class = "wrong";
+                        $scope.initialize();
+                    }
+                }
+
+                
+                //$scope.Verify =function(){
+                //    $scope.check = $scope.random - $scope.guess;
+                //    $scope.NoOfTries = $scope.NoOfTries + 1;
+                    
+
+                //    // $scope.deviation =$scope.guess - $scope.original;
+                //    //if check is equal to zero it means the guess was right
+                //};
+
+               $scope.initialize();
+
+            });
+
+        
+        </script>
+    
+</body>
+</html>

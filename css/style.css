@@ -1,0 +1,38 @@
+#main{
+    
+   width: 820px;
+    height: 550px;
+    background-color: rgb(204, 204, 228);
+    margin: auto;
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-align: center;
+    font-size: 66px;
+}
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-align: center;
+    font-size: 30px;
+}
+.guessG{
+    text-align: center;
+}
+.higher{
+    color: rgb(201, 25, 25);
+
+
+}
+.correct{
+    color:  rgb(68, 188, 68);
+}
+.wrong{
+    color:#f0ad4e;
+}
+#numberOfTries{
+    
+    margin-left: -299px;
+    font-family: cursive;
+    font-size: 16px;
+    color: cornflowerblue;
+}
